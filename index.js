@@ -6,7 +6,7 @@ const DefaultData = require('./default')
 
 const app = express();
 app.use(cors());
-const PORT = 8000;
+const port = process.env.PORT || 8000;
 
 connectToMongo();
 
